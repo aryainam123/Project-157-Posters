@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Project-157</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="./js/Poster.js"></script>
+  </head>
+  <body>
+    <a-scene background="color:#2bb4ea">
+      <a-plane
+        id="ground"
+        color="#3e474e"
+        width="200"
+        height="100"
+        rotation="-90 0 0"
+      ></a-plane>
+
+      <a-entity id="posters-container" posters> </a-entity>
+
+      <a-camera id="camera" wasd-controls="enabled:false;" position="0 10 20">
+        <a-entity
+          id="title"
+          position="0 0.73 -1"
+          text="font: exo2bold; align: center; width: 2; color:black; value: Virtual Comics Store !"
+        >
+          <a-entity
+            id="subtitle"
+            position="0 -0.1 0"
+            text="font: dejavu; align: center; width: 1; color: blue; value: Get Your Favourite Comics"
+          ></a-entity>
+        </a-entity>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
